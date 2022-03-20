@@ -101,6 +101,11 @@ namespace netBackend.Controllers
 
             return NoContent();
         }
+
+        /*
+         * 
+         * 
+         */
         [EnableCors("cors")]
         [HttpPost("CreateVerification")]
         public IActionResult CreateVerification()
