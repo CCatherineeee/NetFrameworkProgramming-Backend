@@ -13,6 +13,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using netBackend.Models;
+using netBackend.Utils;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
+using netBackend.Handlers;
 
 namespace netBackend
 {
@@ -37,6 +43,25 @@ namespace netBackend
             {
 
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "netBackend", Version = "v1" });
+                var securityScheme = new OpenApiSecurityScheme
+                {
+                    Name = "JWT Authentication",
+                    Description = "Enter JWT Bearer token **_only_**",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    Reference = new OpenApiReference
+                    {
+                        Id = JwtBearerDefaults.AuthenticationScheme,
+                        Type = ReferenceType.SecurityScheme
+                    }
+                };
+                c.AddSecurityDefinition(securityScheme.Reference.Id, securityScheme);
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    { securityScheme, new string[] { } }
+                });
             });
             services.AddDbContext<netprojectContext>();
             services.AddCors(options =>
@@ -47,6 +72,39 @@ namespace netBackend
                                       builder.WithOrigins("http://localhost:8080").AllowCredentials();
                                   });
             });
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = Token.Issuer,
+                    ValidAudience = Token.Audience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Token.Secret))
+                    //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Token.Secret));
+
+                };
+            });
+            
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Seller", policy =>
+                {
+                    policy.Requirements.Add(new Idenfication("Seller"));
+                });
+                options.AddPolicy("Buyer", policy =>
+                {
+                    policy.Requirements.Add(new Idenfication("Buyer"));
+                });
+                options.AddPolicy("Admin", policy =>
+                {
+                    policy.Requirements.Add(new Idenfication("Admin"));
+                });
+            });
+
+            services.AddSingleton<IAuthorizationHandler, UserAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,7 +124,10 @@ namespace netBackend
             app.UseCors(cors);
 
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {

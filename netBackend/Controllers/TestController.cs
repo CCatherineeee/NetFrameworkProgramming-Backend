@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using netBackend.Utils;
+using netBackend.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace netBackend.Controllers
 {
@@ -30,6 +32,32 @@ namespace netBackend.Controllers
             Email email = new Email();
             email.Sendmail("来自lxy的邮件", "我喜欢你", "1021278241@qq.com");
             return Ok();
+        }
+
+        [HttpPost("getBuyerToken")]
+        public IActionResult getBuyerToken()
+        {
+            User user = new User();
+            user.Identified = false;
+            user.UserId = 1;
+           String token = Token.GenerateToken("Buyer");
+            return Ok(token);
+        }
+
+        [Authorize(Policy ="Seller")]
+        [HttpPost("testSeller")]
+        public IActionResult testSeller()
+        {
+            
+            return Ok();
+        }
+
+        [Authorize(Policy = "Buyer")]
+        [HttpPost("testBuyer")]
+        public IActionResult testBuyer()
+        {
+
+            return Ok("123");
         }
     }
 }
