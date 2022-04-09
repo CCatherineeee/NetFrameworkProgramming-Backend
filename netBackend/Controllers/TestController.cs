@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -38,9 +39,9 @@ namespace netBackend.Controllers
         public IActionResult getBuyerToken()
         {
             User user = new User();
-            user.Identified = false;
+            // user.Identified = false;
             user.UserId = 1;
-           String token = Token.GenerateToken("Buyer");
+           String token = Token.GenerateToken("Buyer",1);
             return Ok(token);
         }
 

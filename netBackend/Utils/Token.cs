@@ -1,5 +1,5 @@
 using Microsoft.IdentityModel.Tokens;
-using netBackend.Models;
+// using netBackend.Models;
 using System;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Security.Claims;
@@ -33,7 +33,7 @@ namespace netBackend.Utils
             return Convert.ToBase64String(hmac.Key);
         }
         
-        public static string GenerateToken(String type)
+        public static string GenerateToken(String type, int id)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.UTF8.GetBytes(Secret);
@@ -41,7 +41,8 @@ namespace netBackend.Utils
             var signcreds = new SigningCredentials(key_, SecurityAlgorithms.HmacSha256);
 
             var claimsIdentity = new ClaimsIdentity(new[] {
-                new Claim(ClaimTypes.NameIdentifier, type)
+                new Claim(ClaimTypes.NameIdentifier, type),
+                new Claim("id", id.ToString())
             });
            
             

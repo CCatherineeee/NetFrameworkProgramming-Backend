@@ -63,7 +63,7 @@ namespace netBackend
                     { securityScheme, new string[] { } }
                 });
             });
-            services.AddDbContext<netprojectContext>();
+            services.AddDbContext<handy_shareContext>();
             services.AddCors(options =>
             {
                 options.AddPolicy(name: cors,
@@ -90,13 +90,9 @@ namespace netBackend
             
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("Seller", policy =>
+                options.AddPolicy("User", policy =>
                 {
                     policy.Requirements.Add(new Idenfication("Seller"));
-                });
-                options.AddPolicy("Buyer", policy =>
-                {
-                    policy.Requirements.Add(new Idenfication("Buyer"));
                 });
                 options.AddPolicy("Admin", policy =>
                 {

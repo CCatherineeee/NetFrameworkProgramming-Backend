@@ -6,6 +6,8 @@ using System.Security.Claims;
 
 namespace netBackend.Handlers
 {
+
+
     public class UserAuthorizationHandler :
            AuthorizationHandler<Idenfication>
     {

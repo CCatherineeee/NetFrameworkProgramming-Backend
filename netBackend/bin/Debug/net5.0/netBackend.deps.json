@@ -33,12 +33,13 @@
     ".NETCoreApp,Version=v5.0": {
       "netBackend/1.0.0": {
         "dependencies": {
+          "JWT": "8.9.0",
           "Microsoft.AspNet.WebApi.Cors": "5.2.4",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.14",
           "Microsoft.EntityFrameworkCore.Design": "5.0.15",
           "Microsoft.EntityFrameworkCore.InMemory": "5.0.14",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
-          "Microsoft.EntityFrameworkCore.Tools": "5.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.15",
+          "Microsoft.EntityFrameworkCore.Tools": "5.0.15",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
           "MySql.EntityFrameworkCore": "5.0.10",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -363,6 +364,20 @@
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
           }
+        }
+      },
+      "JWT/8.9.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/net5.0/JWT.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/JWT.dll": {}
         }
       },
       "K4os.Compression.LZ4/1.2.6": {
@@ -920,22 +935,22 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/5.0.12": {
+      "Microsoft.EntityFrameworkCore.SqlServer/5.0.15": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "2.0.1",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.15"
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "assemblyVersion": "5.0.12.0",
-            "fileVersion": "5.0.1221.51310"
+            "assemblyVersion": "5.0.15.0",
+            "fileVersion": "5.0.1522.10812"
           }
         },
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/5.0.12": {
+      "Microsoft.EntityFrameworkCore.Tools/5.0.15": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "5.0.15"
         }
@@ -4125,6 +4140,13 @@
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
     },
+    "JWT/8.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XPj1//MhluGE3FsNDs5m0lK/6QoONbMQlClGEjfIbKxaNUuoAtL8qCNf1nr9khBtqWdg3ny6QAvqnyVcnmP7BA==",
+      "path": "jwt/8.9.0",
+      "hashPath": "jwt.8.9.0.nupkg.sha512"
+    },
     "K4os.Compression.LZ4/1.2.6": {
       "type": "package",
       "serviceable": true,
@@ -4321,19 +4343,19 @@
       "path": "microsoft.entityframeworkcore.relational/5.0.15",
       "hashPath": "microsoft.entityframeworkcore.relational.5.0.15.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/5.0.12": {
+    "Microsoft.EntityFrameworkCore.SqlServer/5.0.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-leJohwUxtdDQcpnkzvx0Kkq92AZ8akgaxR8TChts3fD07iqWktPMqs+u5CLcGQwGFd8GuCXUZXBJxvUM1/UNJg==",
-      "path": "microsoft.entityframeworkcore.sqlserver/5.0.12",
-      "hashPath": "microsoft.entityframeworkcore.sqlserver.5.0.12.nupkg.sha512"
+      "sha512": "sha512-lFnEMvLufq3xIuhk3efmMUJvRNxOLlAKl8NNYqvbbtDZtzVdgZR/dZJAGcwZT6AxSGNM29LMDXYY+ydADWcggg==",
+      "path": "microsoft.entityframeworkcore.sqlserver/5.0.15",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.5.0.15.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/5.0.12": {
+    "Microsoft.EntityFrameworkCore.Tools/5.0.15": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fk6P7PZmbN/148oR2RBTnCWsTMdNKlOL/OgF6HJOY8HBbNLIdW720hYIbckmwQ6kad2gaKGXYoW9tDDu69cCQA==",
-      "path": "microsoft.entityframeworkcore.tools/5.0.12",
-      "hashPath": "microsoft.entityframeworkcore.tools.5.0.12.nupkg.sha512"
+      "sha512": "sha512-BDJ/l69JeZNJtd+dqfnD6UxC5CXnqsZ4Da0Uw5fKQ4iqvoqnYsTbviA/OvP+sOsNJhZdVzS/wGqrER4bgyfDSg==",
+      "path": "microsoft.entityframeworkcore.tools/5.0.15",
+      "hashPath": "microsoft.entityframeworkcore.tools.5.0.15.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",

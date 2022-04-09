@@ -149,3 +149,4 @@ E:\netBackend\netBackend\bin\Debug\net5.0\System.Web.Http.dll
 E:\netBackend\netBackend\bin\Debug\net5.0\System.Web.Http.Cors.dll
 E:\netBackend\netBackend\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 E:\netBackend\netBackend\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\netBackend\netBackend\bin\Debug\net5.0\JWT.dll
