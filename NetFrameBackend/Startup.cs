@@ -36,12 +36,13 @@ namespace NetFrameBackend
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "NetFrameBackend", Version = "v1" });
             });
             services.AddDbContext<netContext>();
+
             services.AddCors(options =>
             {
                 options.AddPolicy(name: cors,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://localhost:8080").AllowCredentials();
+                                      builder.WithOrigins("http://localhost:8080").AllowCredentials().AllowAnyMethod().AllowAnyHeader();
                                   });
             });
         }
@@ -61,6 +62,9 @@ namespace NetFrameBackend
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(cors);
+
 
             app.UseEndpoints(endpoints =>
             {

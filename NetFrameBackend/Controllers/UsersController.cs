@@ -11,7 +11,7 @@ using NetFrameBackend.Utils;
 
 namespace NetFrameBackend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Users")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -87,7 +87,7 @@ namespace NetFrameBackend.Controllers
             return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
 
-        [HttpPost("sendEmail")]
+        [HttpGet("CreateVerification")]
         public IActionResult SendEmailTest(String mailAddress)
         {
             Email email = new Email();
