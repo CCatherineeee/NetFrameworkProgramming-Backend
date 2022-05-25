@@ -24,7 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\HandyShare.DTO\HandyShare.DTO.csproj" />
+    <ProjectReference Include="..\HandyShare.EmailHandler\HandyShare.EmailHandler.csproj" />
+    <ProjectReference Include="..\HandyShare.Model\HandyShare.Model.csproj" />
+    <ProjectReference Include="..\HandyShare.Response\HandyShare.Response.csproj" />
+    <ProjectReference Include="..\HandyShare.Service\HandyShare.Service.csproj" />
+    <ProjectReference Include="..\HandyShareWin32Dll\HandyShareWin32Dll.vcxproj" />
   </ItemGroup>
 
 </Project>

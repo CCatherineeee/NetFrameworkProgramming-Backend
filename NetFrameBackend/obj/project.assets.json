@@ -2897,6 +2897,72 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "HandyShare.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/HandyShare.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShare.DTO.dll": {}
+        }
+      },
+      "HandyShare.EmailHandler/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/HandyShare.EmailHandler.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShare.EmailHandler.dll": {}
+        }
+      },
+      "HandyShare.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.16",
+          "MySql.EntityFrameworkCore": "5.0.13"
+        },
+        "compile": {
+          "bin/placeholder/HandyShare.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShare.Model.dll": {}
+        }
+      },
+      "HandyShare.Response/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/HandyShare.Response.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShare.Response.dll": {}
+        }
+      },
+      "HandyShare.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HandyShare.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HandyShare.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShare.Service.dll": {}
+        }
+      },
+      "HandyShareWin32Dll/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HandyShareWin32Dll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShareWin32Dll.dll": {}
+        }
       }
     }
   },
@@ -9486,10 +9552,46 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "HandyShare.DTO/1.0.0": {
+      "type": "project",
+      "path": "../HandyShare.DTO/HandyShare.DTO.csproj",
+      "msbuildProject": "../HandyShare.DTO/HandyShare.DTO.csproj"
+    },
+    "HandyShare.EmailHandler/1.0.0": {
+      "type": "project",
+      "path": "../HandyShare.EmailHandler/HandyShare.EmailHandler.csproj",
+      "msbuildProject": "../HandyShare.EmailHandler/HandyShare.EmailHandler.csproj"
+    },
+    "HandyShare.Model/1.0.0": {
+      "type": "project",
+      "path": "../HandyShare.Model/HandyShare.Model.csproj",
+      "msbuildProject": "../HandyShare.Model/HandyShare.Model.csproj"
+    },
+    "HandyShare.Response/1.0.0": {
+      "type": "project",
+      "path": "../HandyShare.Response/HandyShare.Response.csproj",
+      "msbuildProject": "../HandyShare.Response/HandyShare.Response.csproj"
+    },
+    "HandyShare.Service/1.0.0": {
+      "type": "project",
+      "path": "../HandyShare.Service/HandyShare.Service.csproj",
+      "msbuildProject": "../HandyShare.Service/HandyShare.Service.csproj"
+    },
+    "HandyShareWin32Dll/1.0.0": {
+      "type": "project",
+      "path": "../HandyShareWin32Dll/HandyShareWin32Dll.vcxproj",
+      "msbuildProject": "../HandyShareWin32Dll/HandyShareWin32Dll.vcxproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "HandyShare.DTO >= 1.0.0",
+      "HandyShare.EmailHandler >= 1.0.0",
+      "HandyShare.Model >= 1.0.0",
+      "HandyShare.Response >= 1.0.0",
+      "HandyShare.Service >= 1.0.0",
+      "HandyShareWin32Dll >= 1.0.0",
       "Microsoft.AspNet.WebApi.Cors >= 5.2.8",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.16",
       "Microsoft.EntityFrameworkCore.InMemory >= 5.0.16",
@@ -9532,7 +9634,26 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\NetFrameBackend\\HandyShare.DTO\\HandyShare.DTO.csproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShare.DTO\\HandyShare.DTO.csproj"
+            },
+            "E:\\NetFrameBackend\\HandyShare.EmailHandler\\HandyShare.EmailHandler.csproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShare.EmailHandler\\HandyShare.EmailHandler.csproj"
+            },
+            "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj"
+            },
+            "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj"
+            },
+            "E:\\NetFrameBackend\\HandyShare.Service\\HandyShare.Service.csproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShare.Service\\HandyShare.Service.csproj"
+            },
+            "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj"
+            }
+          }
         }
       },
       "warningProperties": {

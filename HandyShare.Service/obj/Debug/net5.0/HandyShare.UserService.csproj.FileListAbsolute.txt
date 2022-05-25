@@ -1,0 +1,15 @@
+E:\NetFrameBackend\HandyShare.UserService\bin\Debug\net5.0\HandyShare.UserService.deps.json
+E:\NetFrameBackend\HandyShare.UserService\bin\Debug\net5.0\HandyShare.UserService.dll
+E:\NetFrameBackend\HandyShare.UserService\bin\Debug\net5.0\ref\HandyShare.UserService.dll
+E:\NetFrameBackend\HandyShare.UserService\bin\Debug\net5.0\HandyShare.UserService.pdb
+E:\NetFrameBackend\HandyShare.UserService\bin\Debug\net5.0\HandyShare.Model.dll
+E:\NetFrameBackend\HandyShare.UserService\bin\Debug\net5.0\HandyShare.Model.pdb
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\HandyShare.UserService.csproj.AssemblyReference.cache
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\HandyShare.UserService.GeneratedMSBuildEditorConfig.editorconfig
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\HandyShare.UserService.AssemblyInfoInputs.cache
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\HandyShare.UserService.AssemblyInfo.cs
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\HandyShare.UserService.csproj.CoreCompileInputs.cache
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\HandyShare.UserService.csproj.CopyComplete
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\HandyShare.UserService.dll
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\ref\HandyShare.UserService.dll
+E:\NetFrameBackend\HandyShare.UserService\obj\Debug\net5.0\HandyShare.UserService.pdb

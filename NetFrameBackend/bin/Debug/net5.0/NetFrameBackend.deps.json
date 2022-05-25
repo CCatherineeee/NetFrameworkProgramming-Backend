@@ -33,6 +33,11 @@
     ".NETCoreApp,Version=v5.0": {
       "NetFrameBackend/1.0.0": {
         "dependencies": {
+          "HandyShare.DTO": "1.0.0",
+          "HandyShare.Model": "1.0.0",
+          "HandyShare.Response": "1.0.0",
+          "HandyShare.UserService": "1.0.0",
+          "HandyShareWin32Dll": "1.0.0",
           "Microsoft.AspNet.WebApi.Cors": "5.2.8",
           "Microsoft.EntityFrameworkCore.Design": "5.0.16",
           "Microsoft.EntityFrameworkCore.InMemory": "5.0.16",
@@ -2462,6 +2467,45 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "HandyShare.DTO/1.0.0": {
+        "runtime": {
+          "HandyShare.DTO.dll": {}
+        },
+        "compile": {
+          "HandyShare.DTO.dll": {}
+        }
+      },
+      "HandyShare.Model/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.16",
+          "MySql.EntityFrameworkCore": "5.0.13"
+        },
+        "runtime": {
+          "HandyShare.Model.dll": {}
+        },
+        "compile": {
+          "HandyShare.Model.dll": {}
+        }
+      },
+      "HandyShare.Response/1.0.0": {
+        "runtime": {
+          "HandyShare.Response.dll": {}
+        },
+        "compile": {
+          "HandyShare.Response.dll": {}
+        }
+      },
+      "HandyShare.UserService/1.0.0": {
+        "dependencies": {
+          "HandyShare.Model": "1.0.0"
+        },
+        "runtime": {
+          "HandyShare.UserService.dll": {}
+        },
+        "compile": {
+          "HandyShare.UserService.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -4141,6 +4185,9 @@
           "WindowsBase.dll": {}
         },
         "compileOnly": true
+      },
+      "HandyShareWin32Dll/1.0.0": {
+        "compileOnly": true
       }
     }
   },
@@ -5409,6 +5456,26 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "HandyShare.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HandyShare.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HandyShare.Response/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HandyShare.UserService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
@@ -6807,6 +6874,11 @@
     },
     "WindowsBase/4.0.0.0": {
       "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HandyShareWin32Dll/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }
