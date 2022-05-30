@@ -1,0 +1,12 @@
+E:\NetFrameBackend\HandyShare.EmailHandler\bin\Release\net5.0\HandyShare.EmailHandler.deps.json
+E:\NetFrameBackend\HandyShare.EmailHandler\bin\Release\net5.0\HandyShare.EmailHandler.dll
+E:\NetFrameBackend\HandyShare.EmailHandler\bin\Release\net5.0\ref\HandyShare.EmailHandler.dll
+E:\NetFrameBackend\HandyShare.EmailHandler\bin\Release\net5.0\HandyShare.EmailHandler.pdb
+E:\NetFrameBackend\HandyShare.EmailHandler\obj\Release\net5.0\HandyShare.EmailHandler.csproj.AssemblyReference.cache
+E:\NetFrameBackend\HandyShare.EmailHandler\obj\Release\net5.0\HandyShare.EmailHandler.GeneratedMSBuildEditorConfig.editorconfig
+E:\NetFrameBackend\HandyShare.EmailHandler\obj\Release\net5.0\HandyShare.EmailHandler.AssemblyInfoInputs.cache
+E:\NetFrameBackend\HandyShare.EmailHandler\obj\Release\net5.0\HandyShare.EmailHandler.AssemblyInfo.cs
+E:\NetFrameBackend\HandyShare.EmailHandler\obj\Release\net5.0\HandyShare.EmailHandler.csproj.CoreCompileInputs.cache
+E:\NetFrameBackend\HandyShare.EmailHandler\obj\Release\net5.0\HandyShare.EmailHandler.dll
+E:\NetFrameBackend\HandyShare.EmailHandler\obj\Release\net5.0\ref\HandyShare.EmailHandler.dll
+E:\NetFrameBackend\HandyShare.EmailHandler\obj\Release\net5.0\HandyShare.EmailHandler.pdb

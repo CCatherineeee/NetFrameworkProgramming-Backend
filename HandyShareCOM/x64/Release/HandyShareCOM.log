@@ -1,0 +1,105 @@
+﻿  64 bit Processing .\HandyShareCOM.idl
+  HandyShareCOM.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\oaidl.idl
+  oaidl.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\objidl.idl
+  objidl.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\unknwn.idl
+  unknwn.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\shared\wtypes.idl
+  wtypes.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\shared\wtypesbase.idl
+  wtypesbase.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\shared\basetsd.h
+  basetsd.h
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\shared\guiddef.h
+  guiddef.h
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\ocidl.idl
+  ocidl.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\oleidl.idl
+  oleidl.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\servprov.idl
+  servprov.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\urlmon.idl
+  urlmon.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\msxml.idl
+  msxml.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\shobjidl.idl
+  shobjidl.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\docobj.idl
+  docobj.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\shtypes.idl
+  shtypes.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\comcat.idl
+  comcat.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\propidl.idl
+  propidl.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\prsht.idl
+  prsht.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\propsys.idl
+  propsys.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\StructuredQueryCondition.idl
+  StructuredQueryCondition.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\ObjectArray.idl
+  ObjectArray.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\shobjidl_core.idl
+  shobjidl_core.idl
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\oaidl.acf
+  oaidl.acf
+  64 bit Processing D:\Windows Kits\10\Include\10.0.19041.0\um\ocidl.acf
+  ocidl.acf
+  pch.cpp
+  ATL.cpp
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(58,15): error C2365: “ATL”: 重定义；以前的定义是“命名空间”
+D:\Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include\atlctl.h(77): message : 参见“ATL”的声明
+D:\Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include\atlcom.h(3999,2): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\ATL.h(23): message : 查看对正在编译的 类 模板 实例化“ATL::CComCoClass<CATL,&CLSID_ATL>”的引用
+D:\Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include\atlcom.h(3999,2): error C2059: 语法错误:“<”
+D:\Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include\atlcom.h(3999,1): error C2238: 意外的标记位于“;”之前
+D:\Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include\atlcom.h(4000,2): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+D:\Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include\atlcom.h(4000,2): error C2059: 语法错误:“<”
+D:\Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include\atlcom.h(4000,2): error C2238: 意外的标记位于“;”之前
+E:\NetFrameBackend\HandyShareCOM\ATL.h(34,1): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\ATL.h(31,1): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\ATL.h(35,2): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\ATL.h(36,2): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\ATL.h(58,1): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\ATL.h(58,1): error C3083: “_ClassFactoryCreatorClass”:“::”左侧的符号必须是一种类型
+E:\NetFrameBackend\HandyShareCOM\ATL.h(58,1): error C3083: “_CreatorClass”:“::”左侧的符号必须是一种类型
+E:\NetFrameBackend\HandyShareCOM\ATL.h(58,1): error C2440: “初始化”: 无法从“overloaded-function”转换为“ATL::_ATL_CREATORFUNC (__cdecl *)”
+E:\NetFrameBackend\HandyShareCOM\ATL.h(58,1): message : 在匹配目标类型的范围内没有具有该名称的函数
+  HandyShareCOM.cpp
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(58,15): error C2365: “ATL”: 重定义；以前的定义是“命名空间”
+D:\Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\include\atlctl.h(77): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(3,42): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(3,56): error C2504: “CAtlDllModuleT”: 未定义基类
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(3,56): error C2143: 语法错误: 缺少“,”(在“<”的前面)
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(6,2): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(6,2): error C2065: “m_libid”: 未声明的标识符
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2065: “_ATL_REGMAP_ENTRY”: 未声明的标识符
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2146: 语法错误: 缺少“;”(在标识符“aMapEntries”的前面)
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2065: “aMapEntries”: 未声明的标识符
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2059: 语法错误:“]”
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2059: 语法错误:“,”
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2059: 语法错误:“return”
+E:\NetFrameBackend\HandyShareCOM\dllmain.h(7,2): error C2059: 语法错误:“}”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM.cpp(21,9): error C2065: “_AtlModule”: 未声明的标识符
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM.cpp(28,9): error C2065: “_AtlModule”: 未声明的标识符
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM.cpp(36,15): error C2065: “_AtlModule”: 未声明的标识符
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM.cpp(44,15): error C2065: “_AtlModule”: 未声明的标识符
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM.cpp(58,9): error C2027: 使用了未定义类型“ATL”
+E:\NetFrameBackend\HandyShareCOM\HandyShareCOM_i.h(223): message : 参见“ATL”的声明
+  正在生成代码...

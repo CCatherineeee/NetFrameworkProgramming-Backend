@@ -158,6 +158,15 @@ E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.Response.dll
 E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.Model.pdb
 E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.Response.pdb
 E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.DTO.dll
-E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.UserService.dll
 E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.DTO.pdb
-E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.UserService.pdb
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\Tencent.QCloud.Cos.Sdk.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.EmailHandler.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.OssHandler.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.Service.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.EmailHandler.pdb
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.OssHandler.pdb
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShare.Service.pdb
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShareOssStorageCLI.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShareOssStorageCLI.pdb
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShareCLI.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShareCLI.pdb

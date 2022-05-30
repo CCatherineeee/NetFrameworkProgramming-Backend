@@ -2898,6 +2898,15 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Tencent.QCloud.Cos.Sdk/5.4.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tencent.QCloud.Cos.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tencent.QCloud.Cos.Sdk.dll": {}
+        }
+      },
       "HandyShare.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2932,6 +2941,21 @@
           "bin/placeholder/HandyShare.Model.dll": {}
         }
       },
+      "HandyShare.OssHandler/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HandyShare.Response": "1.0.0",
+          "HandyShareOssStorageCLI": "1.0.0",
+          "Tencent.QCloud.Cos.Sdk": "5.4.3"
+        },
+        "compile": {
+          "bin/placeholder/HandyShare.OssHandler.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShare.OssHandler.dll": {}
+        }
+      },
       "HandyShare.Response/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2946,13 +2970,34 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "HandyShare.Model": "1.0.0"
+          "HandyShare.DTO": "1.0.0",
+          "HandyShare.Model": "1.0.0",
+          "HandyShare.OssHandler": "1.0.0",
+          "HandyShareOssStorageCLI": "1.0.0"
         },
         "compile": {
           "bin/placeholder/HandyShare.Service.dll": {}
         },
         "runtime": {
           "bin/placeholder/HandyShare.Service.dll": {}
+        }
+      },
+      "HandyShareCLI/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HandyShareCLI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShareCLI.dll": {}
+        }
+      },
+      "HandyShareOssStorageCLI/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HandyShareOssStorageCLI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShareOssStorageCLI.dll": {}
         }
       },
       "HandyShareWin32Dll/1.0.0": {
@@ -9553,6 +9598,18 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Tencent.QCloud.Cos.Sdk/5.4.3": {
+      "sha512": "kQcpas+FXwHg6SoQPqf1YES5qYh0vDVDqPbx0W71usa5KxswjJXwoTEyMcMYd4zzmT31a8UKTBUjhxdqyfT4PA==",
+      "type": "package",
+      "path": "tencent.qcloud.cos.sdk/5.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Tencent.QCloud.Cos.Sdk.dll",
+        "tencent.qcloud.cos.sdk.5.4.3.nupkg.sha512",
+        "tencent.qcloud.cos.sdk.nuspec"
+      ]
+    },
     "HandyShare.DTO/1.0.0": {
       "type": "project",
       "path": "../HandyShare.DTO/HandyShare.DTO.csproj",
@@ -9568,6 +9625,11 @@
       "path": "../HandyShare.Model/HandyShare.Model.csproj",
       "msbuildProject": "../HandyShare.Model/HandyShare.Model.csproj"
     },
+    "HandyShare.OssHandler/1.0.0": {
+      "type": "project",
+      "path": "../HandyShare.OssHandler/HandyShare.OssHandler.csproj",
+      "msbuildProject": "../HandyShare.OssHandler/HandyShare.OssHandler.csproj"
+    },
     "HandyShare.Response/1.0.0": {
       "type": "project",
       "path": "../HandyShare.Response/HandyShare.Response.csproj",
@@ -9577,6 +9639,16 @@
       "type": "project",
       "path": "../HandyShare.Service/HandyShare.Service.csproj",
       "msbuildProject": "../HandyShare.Service/HandyShare.Service.csproj"
+    },
+    "HandyShareCLI/1.0.0": {
+      "type": "project",
+      "path": "../HandyShareCLI/HandyShareCLI.vcxproj",
+      "msbuildProject": "../HandyShareCLI/HandyShareCLI.vcxproj"
+    },
+    "HandyShareOssStorageCLI/1.0.0": {
+      "type": "project",
+      "path": "../HandyShareOssStorageCLI/HandyShareOssStorageCLI.vcxproj",
+      "msbuildProject": "../HandyShareOssStorageCLI/HandyShareOssStorageCLI.vcxproj"
     },
     "HandyShareWin32Dll/1.0.0": {
       "type": "project",
@@ -9589,8 +9661,11 @@
       "HandyShare.DTO >= 1.0.0",
       "HandyShare.EmailHandler >= 1.0.0",
       "HandyShare.Model >= 1.0.0",
+      "HandyShare.OssHandler >= 1.0.0",
       "HandyShare.Response >= 1.0.0",
       "HandyShare.Service >= 1.0.0",
+      "HandyShareCLI >= 1.0.0",
+      "HandyShareOssStorageCLI >= 1.0.0",
       "HandyShareWin32Dll >= 1.0.0",
       "Microsoft.AspNet.WebApi.Cors >= 5.2.8",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.16",
@@ -9644,11 +9719,20 @@
             "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj": {
               "projectPath": "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj"
             },
+            "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj"
+            },
             "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj": {
               "projectPath": "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj"
             },
             "E:\\NetFrameBackend\\HandyShare.Service\\HandyShare.Service.csproj": {
               "projectPath": "E:\\NetFrameBackend\\HandyShare.Service\\HandyShare.Service.csproj"
+            },
+            "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj"
+            },
+            "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
             },
             "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj": {
               "projectPath": "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj"

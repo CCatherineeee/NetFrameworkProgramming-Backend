@@ -1,0 +1,37 @@
+﻿// HandyShareCOM.idl: HandyShareCOM 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 生成类型库(HandyShareCOM.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(8918365d-a7bf-4911-ac0c-d297f5012d21),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IATL : IDispatch
+{
+	[id(1)] HRESULT Number([in] int __t, [out, retval]int* __result);
+};
+[
+	uuid(b2f357ef-a80b-4498-b801-7352b9245795),
+	version(1.0),
+]
+library HandyShareCOMLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(97ae114f-bb76-4f79-afcc-1f877137fe52)
+	]
+	coclass ATL
+	{
+		[default] interface IATL;
+	};
+};
+
+import "shobjidl.idl";

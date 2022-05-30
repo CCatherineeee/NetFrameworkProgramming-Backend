@@ -185,6 +185,76 @@
         }
       }
     },
+    "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj",
+        "projectName": "HandyShare.OssHandler",
+        "projectPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj",
+        "packagesPath": "C:\\Users\\Cathe\\.nuget\\packages\\",
+        "outputPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj"
+              },
+              "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Tencent.QCloud.Cos.Sdk": {
+              "target": "Package",
+              "version": "[5.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -269,8 +339,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "E:\\NetFrameBackend\\HandyShare.DTO\\HandyShare.DTO.csproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShare.DTO\\HandyShare.DTO.csproj"
+              },
               "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj"
+              },
+              "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj"
+              },
+              "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
               }
             }
           }
@@ -301,6 +380,26 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj": {
+      "restore": {
+        "projectUniqueName": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj",
+        "projectName": "HandyShareCLI",
+        "projectPath": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj"
+      },
+      "frameworks": {
+        "native": {}
+      }
+    },
+    "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
+      "restore": {
+        "projectUniqueName": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj",
+        "projectName": "HandyShareOssStorageCLI",
+        "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
+      },
+      "frameworks": {
+        "native": {}
       }
     },
     "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj": {
@@ -349,11 +448,20 @@
               "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj"
               },
+              "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj"
+              },
               "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj"
               },
               "E:\\NetFrameBackend\\HandyShare.Service\\HandyShare.Service.csproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShare.Service\\HandyShare.Service.csproj"
+              },
+              "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj"
+              },
+              "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
               },
               "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj"

@@ -2,13 +2,16 @@
 
 namespace HandyShare.Response
 {
-    public partial class Response
+    public partial class IResponse
     {
-        public Response(int code, object data, string msg)
+        public IResponse(int code, object data, string msg)
         {
             this.code = code;
             this.data = data;
             this.msg = msg;
+        }
+        public IResponse()
+        {
         }
 
         public int code { get; set; }

@@ -1,0 +1,15 @@
+E:\NetFrameBackend\HandyShare.OssHandler\bin\Release\net5.0\HandyShare.OssHandler.deps.json
+E:\NetFrameBackend\HandyShare.OssHandler\bin\Release\net5.0\HandyShare.OssHandler.dll
+E:\NetFrameBackend\HandyShare.OssHandler\bin\Release\net5.0\ref\HandyShare.OssHandler.dll
+E:\NetFrameBackend\HandyShare.OssHandler\bin\Release\net5.0\HandyShare.OssHandler.pdb
+E:\NetFrameBackend\HandyShare.OssHandler\bin\Release\net5.0\HandyShare.Response.dll
+E:\NetFrameBackend\HandyShare.OssHandler\bin\Release\net5.0\HandyShare.Response.pdb
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\HandyShare.OssHandler.csproj.AssemblyReference.cache
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\HandyShare.OssHandler.GeneratedMSBuildEditorConfig.editorconfig
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\HandyShare.OssHandler.AssemblyInfoInputs.cache
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\HandyShare.OssHandler.AssemblyInfo.cs
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\HandyShare.OssHandler.csproj.CoreCompileInputs.cache
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\HandyShare.OssHandler.csproj.CopyComplete
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\HandyShare.OssHandler.dll
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\ref\HandyShare.OssHandler.dll
+E:\NetFrameBackend\HandyShare.OssHandler\obj\Release\net5.0\HandyShare.OssHandler.pdb

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Tencent.QCloud.Cos.Sdk" Version="5.4.3" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\HandyShare.Response\HandyShare.Response.csproj" />
+	  <ProjectReference Include="..\HandyShareOssStorageCLI\HandyShareOssStorageCLI.vcxproj" />
+	</ItemGroup>
+
+</Project>

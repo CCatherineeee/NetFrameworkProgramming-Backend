@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dttVfziFlJoaVBpYS7s+yc57DebcFk1s7ivWo4b5zS0cdotr57x+XN+LnrVghGxMsgBJwbWqESFXtamRmjdoJg==",
+  "dgSpecHash": "uPKZdZB6FBVOqU/IvhUR9GH3CboGaPppBP6UyhN+zdFIeZmNAuX1+lQY+ssd1zZKWayhn5Fgjxbb5H/SddrEFg==",
   "success": true,
   "projectFilePath": "E:\\NetFrameBackend\\NetFrameBackend\\NetFrameBackend.csproj",
   "expectedPackageFiles": [
@@ -183,7 +183,8 @@
     "C:\\Users\\Cathe\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Cathe\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Cathe\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Cathe\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Cathe\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Cathe\\.nuget\\packages\\tencent.qcloud.cos.sdk\\5.4.3\\tencent.qcloud.cos.sdk.5.4.3.nupkg.sha512"
   ],
   "logs": [
     {

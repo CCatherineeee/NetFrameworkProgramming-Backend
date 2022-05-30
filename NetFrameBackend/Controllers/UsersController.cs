@@ -101,18 +101,18 @@ namespace NetFrameBackend.Controllers
                 var flag = await UserService.IsEmailRegistered(userdto.Email);
                 if (flag == true)
                 {
-                    return Ok(new Response(400, null, "此邮箱已被注册！"));
+                    return Ok(new IResponse(400, null, "此邮箱已被注册！"));
                 }
                 User user = new User();
                 user.Email = userdto.Email;
                 user.Password = userdto.Password;
                 user.Name = userdto.Name;
                 UserService.AddUser(user);
-                return Ok(new Response(200, null, "注册成功！"));
+                return Ok(new IResponse(200, null, "注册成功！"));
             }
             else
             {
-                return Ok(new Response(400, null, "验证码错误！"));
+                return Ok(new IResponse(400, null, "验证码错误！"));
             }
 
         }
@@ -124,14 +124,14 @@ namespace NetFrameBackend.Controllers
             var flag = await UserService.IsUserExistByName(userdto.Name);
             if (!flag)
             {
-                return Ok(new Response(400, null, "用户不存在！"));
+                return Ok(new IResponse(400, null, "用户不存在！"));
             }
             var id = await UserService.CheckPasswordByName(userdto.Name, userdto.Password);
             if (id != -1)
             {
-                return Ok(new Response(200, id , "登陆成功!"));
+                return Ok(new IResponse(200, id , "登陆成功!"));
             }
-            return Ok(new Response(400, null, "密码错误！"));
+            return Ok(new IResponse(400, null, "密码错误！"));
         }
 
 
@@ -141,14 +141,14 @@ namespace NetFrameBackend.Controllers
             var flag = await UserService.IsUserExistByEmail(userdto.Email);
             if (flag == false)
             {
-                return Ok(new Response(400, null, "用户不存在！"));
+                return Ok(new IResponse(400, null, "用户不存在！"));
             }
             var id = await UserService.CheckPasswordByEmail(userdto.Email, userdto.Password);
             if(id != -1)
             {
-                return Ok(new Response(200, id, "登陆成功!"));
+                return Ok(new IResponse(200, id, "登陆成功!"));
             }
-            return Ok(new Response(400, null, "密码错误！"));
+            return Ok(new IResponse(400, null, "密码错误！"));
         }
 
         [HttpGet("resetPasswordGetVerify")]
@@ -166,7 +166,7 @@ namespace NetFrameBackend.Controllers
         {
             if (userDTO.verifyCode != "1234")
             {
-                return Ok(new Response(400, null, "验证码错误！"));
+                return Ok(new IResponse(400, null, "验证码错误！"));
             }
             try
             {
@@ -174,9 +174,9 @@ namespace NetFrameBackend.Controllers
             }
             catch
             {
-                return Ok(new Response(400, null, "修改失败！"));
+                return Ok(new IResponse(400, null, "修改失败！"));
             }
-            return Ok(new Response(200, null, "修改成功！"));
+            return Ok(new IResponse(200, null, "修改成功！"));
 
         }
 

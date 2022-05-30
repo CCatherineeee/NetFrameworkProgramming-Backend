@@ -1,0 +1,26 @@
+HKCR
+{
+	HandyShareCOM.ATL.1 = s 'ATL class'
+	{
+		CLSID = s '{97ae114f-bb76-4f79-afcc-1f877137fe52}'
+	}
+	HandyShareCOM.ATL = s 'ATL class'
+	{		
+		CurVer = s 'HandyShareCOM.ATL.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {97ae114f-bb76-4f79-afcc-1f877137fe52} = s 'ATL class'
+		{
+			ProgID = s 'HandyShareCOM.ATL.1'
+			VersionIndependentProgID = s 'HandyShareCOM.ATL'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{b2f357ef-a80b-4498-b801-7352b9245795}'
+			Version = s '1.0'
+		}
+	}
+}

@@ -27,8 +27,11 @@
     <ProjectReference Include="..\HandyShare.DTO\HandyShare.DTO.csproj" />
     <ProjectReference Include="..\HandyShare.EmailHandler\HandyShare.EmailHandler.csproj" />
     <ProjectReference Include="..\HandyShare.Model\HandyShare.Model.csproj" />
+    <ProjectReference Include="..\HandyShare.OssHandler\HandyShare.OssHandler.csproj" />
     <ProjectReference Include="..\HandyShare.Response\HandyShare.Response.csproj" />
     <ProjectReference Include="..\HandyShare.Service\HandyShare.Service.csproj" />
+    <ProjectReference Include="..\HandyShareCLI\HandyShareCLI.vcxproj" />
+    <ProjectReference Include="..\HandyShareOssStorageCLI\HandyShareOssStorageCLI.vcxproj" />
     <ProjectReference Include="..\HandyShareWin32Dll\HandyShareWin32Dll.vcxproj" />
   </ItemGroup>
 

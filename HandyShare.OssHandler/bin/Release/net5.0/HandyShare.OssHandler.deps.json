@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "HandyShare.OssHandler/1.0.0": {
+        "dependencies": {
+          "HandyShare.Response": "1.0.0",
+          "Tencent.QCloud.Cos.Sdk": "5.4.3"
+        },
+        "runtime": {
+          "HandyShare.OssHandler.dll": {}
+        }
+      },
+      "Tencent.QCloud.Cos.Sdk/5.4.3": {
+        "runtime": {
+          "lib/netstandard2.0/Tencent.QCloud.Cos.Sdk.dll": {
+            "assemblyVersion": "5.4.3.0",
+            "fileVersion": "5.4.3.0"
+          }
+        }
+      },
+      "HandyShare.Response/1.0.0": {
+        "runtime": {
+          "HandyShare.Response.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HandyShare.OssHandler/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Tencent.QCloud.Cos.Sdk/5.4.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kQcpas+FXwHg6SoQPqf1YES5qYh0vDVDqPbx0W71usa5KxswjJXwoTEyMcMYd4zzmT31a8UKTBUjhxdqyfT4PA==",
+      "path": "tencent.qcloud.cos.sdk/5.4.3",
+      "hashPath": "tencent.qcloud.cos.sdk.5.4.3.nupkg.sha512"
+    },
+    "HandyShare.Response/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

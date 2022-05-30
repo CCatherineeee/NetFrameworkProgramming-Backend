@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7b2tj9IoXooPIaWGP3B9cZH932N7xQkPFGz8zNoW3ZWIX5UHuKsNnLsvUb9N0lU67V6cZMv8CDe89mVkvJf0CQ==",
+  "success": true,
+  "projectFilePath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cathe\\.nuget\\packages\\tencent.qcloud.cos.sdk\\5.4.3\\tencent.qcloud.cos.sdk.5.4.3.nupkg.sha512"
+  ],
+  "logs": []
+}

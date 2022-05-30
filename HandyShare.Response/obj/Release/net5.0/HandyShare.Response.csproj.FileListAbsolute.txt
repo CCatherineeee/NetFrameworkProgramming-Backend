@@ -1,0 +1,12 @@
+E:\NetFrameBackend\HandyShare.Response\bin\Release\net5.0\HandyShare.Response.deps.json
+E:\NetFrameBackend\HandyShare.Response\bin\Release\net5.0\HandyShare.Response.dll
+E:\NetFrameBackend\HandyShare.Response\bin\Release\net5.0\ref\HandyShare.Response.dll
+E:\NetFrameBackend\HandyShare.Response\bin\Release\net5.0\HandyShare.Response.pdb
+E:\NetFrameBackend\HandyShare.Response\obj\Release\net5.0\HandyShare.Response.csproj.AssemblyReference.cache
+E:\NetFrameBackend\HandyShare.Response\obj\Release\net5.0\HandyShare.Response.GeneratedMSBuildEditorConfig.editorconfig
+E:\NetFrameBackend\HandyShare.Response\obj\Release\net5.0\HandyShare.Response.AssemblyInfoInputs.cache
+E:\NetFrameBackend\HandyShare.Response\obj\Release\net5.0\HandyShare.Response.AssemblyInfo.cs
+E:\NetFrameBackend\HandyShare.Response\obj\Release\net5.0\HandyShare.Response.csproj.CoreCompileInputs.cache
+E:\NetFrameBackend\HandyShare.Response\obj\Release\net5.0\HandyShare.Response.dll
+E:\NetFrameBackend\HandyShare.Response\obj\Release\net5.0\ref\HandyShare.Response.dll
+E:\NetFrameBackend\HandyShare.Response\obj\Release\net5.0\HandyShare.Response.pdb

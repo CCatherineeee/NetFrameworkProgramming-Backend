@@ -1,0 +1,140 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Tencent.QCloud.Cos.Sdk/5.4.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tencent.QCloud.Cos.Sdk.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tencent.QCloud.Cos.Sdk.dll": {}
+        }
+      },
+      "HandyShare.Response/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/HandyShare.Response.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShare.Response.dll": {}
+        }
+      },
+      "HandyShareOssStorageCLI/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HandyShareOssStorageCLI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShareOssStorageCLI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tencent.QCloud.Cos.Sdk/5.4.3": {
+      "sha512": "kQcpas+FXwHg6SoQPqf1YES5qYh0vDVDqPbx0W71usa5KxswjJXwoTEyMcMYd4zzmT31a8UKTBUjhxdqyfT4PA==",
+      "type": "package",
+      "path": "tencent.qcloud.cos.sdk/5.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Tencent.QCloud.Cos.Sdk.dll",
+        "tencent.qcloud.cos.sdk.5.4.3.nupkg.sha512",
+        "tencent.qcloud.cos.sdk.nuspec"
+      ]
+    },
+    "HandyShare.Response/1.0.0": {
+      "type": "project",
+      "path": "../HandyShare.Response/HandyShare.Response.csproj",
+      "msbuildProject": "../HandyShare.Response/HandyShare.Response.csproj"
+    },
+    "HandyShareOssStorageCLI/1.0.0": {
+      "type": "project",
+      "path": "../HandyShareOssStorageCLI/HandyShareOssStorageCLI.vcxproj",
+      "msbuildProject": "../HandyShareOssStorageCLI/HandyShareOssStorageCLI.vcxproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "HandyShare.Response >= 1.0.0",
+      "HandyShareOssStorageCLI >= 1.0.0",
+      "Tencent.QCloud.Cos.Sdk >= 5.4.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Cathe\\.nuget\\packages\\": {},
+    "D:\\Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj",
+      "projectName": "HandyShare.OssHandler",
+      "projectPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj",
+      "packagesPath": "C:\\Users\\Cathe\\.nuget\\packages\\",
+      "outputPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Cathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShare.Response\\HandyShare.Response.csproj"
+            },
+            "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Tencent.QCloud.Cos.Sdk": {
+            "target": "Package",
+            "version": "[5.4.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

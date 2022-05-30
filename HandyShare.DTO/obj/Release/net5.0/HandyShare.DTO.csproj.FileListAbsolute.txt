@@ -1,0 +1,12 @@
+E:\NetFrameBackend\HandyShare.DTO\bin\Release\net5.0\HandyShare.DTO.deps.json
+E:\NetFrameBackend\HandyShare.DTO\bin\Release\net5.0\HandyShare.DTO.dll
+E:\NetFrameBackend\HandyShare.DTO\bin\Release\net5.0\ref\HandyShare.DTO.dll
+E:\NetFrameBackend\HandyShare.DTO\bin\Release\net5.0\HandyShare.DTO.pdb
+E:\NetFrameBackend\HandyShare.DTO\obj\Release\net5.0\HandyShare.DTO.csproj.AssemblyReference.cache
+E:\NetFrameBackend\HandyShare.DTO\obj\Release\net5.0\HandyShare.DTO.GeneratedMSBuildEditorConfig.editorconfig
+E:\NetFrameBackend\HandyShare.DTO\obj\Release\net5.0\HandyShare.DTO.AssemblyInfoInputs.cache
+E:\NetFrameBackend\HandyShare.DTO\obj\Release\net5.0\HandyShare.DTO.AssemblyInfo.cs
+E:\NetFrameBackend\HandyShare.DTO\obj\Release\net5.0\HandyShare.DTO.csproj.CoreCompileInputs.cache
+E:\NetFrameBackend\HandyShare.DTO\obj\Release\net5.0\HandyShare.DTO.dll
+E:\NetFrameBackend\HandyShare.DTO\obj\Release\net5.0\ref\HandyShare.DTO.dll
+E:\NetFrameBackend\HandyShare.DTO\obj\Release\net5.0\HandyShare.DTO.pdb

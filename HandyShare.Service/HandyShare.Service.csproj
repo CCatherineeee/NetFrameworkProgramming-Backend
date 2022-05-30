@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HandyShare.DTO\HandyShare.DTO.csproj" />
     <ProjectReference Include="..\HandyShare.Model\HandyShare.Model.csproj" />
+    <ProjectReference Include="..\HandyShare.OssHandler\HandyShare.OssHandler.csproj" />
+    <ProjectReference Include="..\HandyShareOssStorageCLI\HandyShareOssStorageCLI.vcxproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  HandyShareCLI.cpp
+E:\NetFrameBackend\HandyShareCLI\HandyShareCLI.h(18,1): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\NetFrameBackend\HandyShareCLI\HandyShareCLI.h(19,14): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : 遇到了 MSIL 模块；对 MSIL 禁用了增量链接；正在执行完全链接
+  HandyShareCLI.vcxproj -> E:\NetFrameBackend\x64\Debug\HandyShareCLI.dll
