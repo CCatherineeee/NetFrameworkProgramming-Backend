@@ -10,3 +10,6 @@ E:\NetFrameBackend\HandyShare.Response\obj\Debug\net5.0\HandyShare.Response.cspr
 E:\NetFrameBackend\HandyShare.Response\obj\Debug\net5.0\HandyShare.Response.dll
 E:\NetFrameBackend\HandyShare.Response\obj\Debug\net5.0\ref\HandyShare.Response.dll
 E:\NetFrameBackend\HandyShare.Response\obj\Debug\net5.0\HandyShare.Response.pdb
+E:\NetFrameBackend\HandyShare.Response\bin\Debug\net5.0\HandyShare.Model.dll
+E:\NetFrameBackend\HandyShare.Response\bin\Debug\net5.0\HandyShare.Model.pdb
+E:\NetFrameBackend\HandyShare.Response\obj\Debug\net5.0\HandyShare.Response.csproj.CopyComplete

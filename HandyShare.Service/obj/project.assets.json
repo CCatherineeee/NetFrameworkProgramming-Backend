@@ -520,11 +520,23 @@
       "HandyShare.Response/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HandyShare.Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HandyShare.Response.dll": {}
         },
         "runtime": {
           "bin/placeholder/HandyShare.Response.dll": {}
+        }
+      },
+      "HandyShareCLI/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HandyShareCLI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShareCLI.dll": {}
         }
       },
       "HandyShareOssStorageCLI/1.0.0": {
@@ -534,6 +546,15 @@
         },
         "runtime": {
           "bin/placeholder/HandyShareOssStorageCLI.dll": {}
+        }
+      },
+      "HandyShareWin32Dll/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HandyShareWin32Dll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HandyShareWin32Dll.dll": {}
         }
       }
     }
@@ -1545,10 +1566,20 @@
       "path": "../HandyShare.Response/HandyShare.Response.csproj",
       "msbuildProject": "../HandyShare.Response/HandyShare.Response.csproj"
     },
+    "HandyShareCLI/1.0.0": {
+      "type": "project",
+      "path": "../HandyShareCLI/HandyShareCLI.vcxproj",
+      "msbuildProject": "../HandyShareCLI/HandyShareCLI.vcxproj"
+    },
     "HandyShareOssStorageCLI/1.0.0": {
       "type": "project",
       "path": "../HandyShareOssStorageCLI/HandyShareOssStorageCLI.vcxproj",
       "msbuildProject": "../HandyShareOssStorageCLI/HandyShareOssStorageCLI.vcxproj"
+    },
+    "HandyShareWin32Dll/1.0.0": {
+      "type": "project",
+      "path": "../HandyShareWin32Dll/HandyShareWin32Dll.vcxproj",
+      "msbuildProject": "../HandyShareWin32Dll/HandyShareWin32Dll.vcxproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1556,7 +1587,9 @@
       "HandyShare.DTO >= 1.0.0",
       "HandyShare.Model >= 1.0.0",
       "HandyShare.OssHandler >= 1.0.0",
-      "HandyShareOssStorageCLI >= 1.0.0"
+      "HandyShareCLI >= 1.0.0",
+      "HandyShareOssStorageCLI >= 1.0.0",
+      "HandyShareWin32Dll >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1599,8 +1632,14 @@
             "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj": {
               "projectPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj"
             },
+            "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj"
+            },
             "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
               "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
+            },
+            "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj": {
+              "projectPath": "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj"
             }
           }
         }

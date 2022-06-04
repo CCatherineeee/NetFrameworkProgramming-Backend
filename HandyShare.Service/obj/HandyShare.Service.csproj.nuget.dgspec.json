@@ -224,7 +224,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -291,8 +295,14 @@
               "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj"
               },
+              "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj"
+              },
               "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
+              },
+              "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj"
               }
             }
           }
@@ -325,11 +335,31 @@
         }
       }
     },
+    "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj": {
+      "restore": {
+        "projectUniqueName": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj",
+        "projectName": "HandyShareCLI",
+        "projectPath": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj"
+      },
+      "frameworks": {
+        "native": {}
+      }
+    },
     "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
       "restore": {
         "projectUniqueName": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj",
         "projectName": "HandyShareOssStorageCLI",
         "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
+      },
+      "frameworks": {
+        "native": {}
+      }
+    },
+    "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj": {
+      "restore": {
+        "projectUniqueName": "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj",
+        "projectName": "HandyShareWin32Dll",
+        "projectPath": "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj"
       },
       "frameworks": {
         "native": {}

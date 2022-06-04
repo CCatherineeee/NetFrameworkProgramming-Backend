@@ -8,7 +8,9 @@
     <ProjectReference Include="..\HandyShare.DTO\HandyShare.DTO.csproj" />
     <ProjectReference Include="..\HandyShare.Model\HandyShare.Model.csproj" />
     <ProjectReference Include="..\HandyShare.OssHandler\HandyShare.OssHandler.csproj" />
+    <ProjectReference Include="..\HandyShareCLI\HandyShareCLI.vcxproj" />
     <ProjectReference Include="..\HandyShareOssStorageCLI\HandyShareOssStorageCLI.vcxproj" />
+    <ProjectReference Include="..\HandyShareWin32Dll\HandyShareWin32Dll.vcxproj" />
   </ItemGroup>
 
 </Project>

@@ -3,6 +3,7 @@ using HandyShare.Model;
 using HandyShare.OssHandler;
 using HandyShare.Response;
 using HandyShareOssStorageCLI;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,6 @@ namespace HandyShare.Service
 {
     public class PostService
     {
-        private static readonly netContext _context = new netContext();
         public static async Task<IResponse> UploadPic(string FileName,byte[] bytes)
         {
             var cosClient = new CosBuilder()
@@ -34,12 +34,15 @@ namespace HandyShare.Service
 
         public static async Task<IResponse> AddPost(PostDTO postDTO)
         {
+            netContext _context = new netContext();
             Post post = new Post();
             post.UserId = postDTO.user_id;
             post.PicUrl = postDTO.pic_url;
             post.Title = postDTO.title;
             post.Content = postDTO.content;
-
+            post.CreateTime = DateTime.Now;
+            post.CommrntCount = 0;
+            post.FavoriteCount = 0;
             _context.Posts.Add(post);
             try
             {
@@ -55,6 +58,28 @@ namespace HandyShare.Service
                 return new IResponse(200, post.PostId, "发布成功！");
             }
             return new IResponse(500, -1, "发布失败！");
+        }
+
+        public static async Task<Post> GetPost(int id)
+        {
+            netContext _context = new netContext();
+            var post = await _context.Posts.FindAsync(id);
+            _context.Entry(post).Reference("User").Load();
+            _context.Entry(post.User).Collection("Posts").Load();
+
+            _context.Entry(post).Collection("Comments").Load();
+            _context.Entry(post).Collection("PostLabels").Load();
+
+            return post;
+        }
+
+        public static async Task<List<Post>> GetPostByUserId(int id)
+        {
+            netContext _context = new netContext();
+            List<Post> posts = await _context.Posts.Include(e=>e.PostLabels)
+                .Where(e => e.UserId == id).ToListAsync();
+
+            return posts;
         }
     }
 }

@@ -281,7 +281,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShare.Model\\HandyShare.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -348,8 +352,14 @@
               "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShare.OssHandler\\HandyShare.OssHandler.csproj"
               },
+              "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShareCLI\\HandyShareCLI.vcxproj"
+              },
               "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj": {
                 "projectPath": "E:\\NetFrameBackend\\HandyShareOssStorageCLI\\HandyShareOssStorageCLI.vcxproj"
+              },
+              "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj": {
+                "projectPath": "E:\\NetFrameBackend\\HandyShareWin32Dll\\HandyShareWin32Dll.vcxproj"
               }
             }
           }
@@ -482,6 +492,10 @@
             "Microsoft.AspNet.WebApi.Cors": {
               "target": "Package",
               "version": "[5.2.8, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.16, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

@@ -11,7 +11,9 @@
           "HandyShare.DTO": "1.0.0",
           "HandyShare.Model": "1.0.0",
           "HandyShare.OssHandler": "1.0.0",
-          "HandyShareOssStorageCLI": "1.0.0"
+          "HandyShareCLI": "1.0.0",
+          "HandyShareOssStorageCLI": "1.0.0",
+          "HandyShareWin32Dll": "1.0.0"
         },
         "runtime": {
           "HandyShare.Service.dll": {}
@@ -405,8 +407,16 @@
         }
       },
       "HandyShare.Response/1.0.0": {
+        "dependencies": {
+          "HandyShare.Model": "1.0.0"
+        },
         "runtime": {
           "HandyShare.Response.dll": {}
+        }
+      },
+      "HandyShareCLI/1.0.0": {
+        "runtime": {
+          "HandyShareCLI.dll": {}
         }
       },
       "HandyShareOssStorageCLI/1.0.0": {
@@ -697,6 +707,11 @@
       "sha512": ""
     },
     "HandyShare.Response/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HandyShareCLI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

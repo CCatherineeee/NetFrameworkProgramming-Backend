@@ -21,3 +21,5 @@ E:\NetFrameBackend\HandyShare.Service\bin\Debug\net5.0\HandyShareOssStorageCLI.d
 E:\NetFrameBackend\HandyShare.Service\bin\Debug\net5.0\HandyShareOssStorageCLI.pdb
 E:\NetFrameBackend\HandyShare.Service\bin\Debug\net5.0\HandyShare.DTO.dll
 E:\NetFrameBackend\HandyShare.Service\bin\Debug\net5.0\HandyShare.DTO.pdb
+E:\NetFrameBackend\HandyShare.Service\bin\Debug\net5.0\HandyShareCLI.dll
+E:\NetFrameBackend\HandyShare.Service\bin\Debug\net5.0\HandyShareCLI.pdb

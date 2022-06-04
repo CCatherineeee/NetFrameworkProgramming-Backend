@@ -2,7 +2,6 @@ E:\NetFrameBackend\HandyShare.DTO\bin\Debug\net5.0\HandyShare.DTO.deps.json
 E:\NetFrameBackend\HandyShare.DTO\bin\Debug\net5.0\HandyShare.DTO.dll
 E:\NetFrameBackend\HandyShare.DTO\bin\Debug\net5.0\ref\HandyShare.DTO.dll
 E:\NetFrameBackend\HandyShare.DTO\bin\Debug\net5.0\HandyShare.DTO.pdb
-E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\HandyShare.DTO.csproj.AssemblyReference.cache
 E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\HandyShare.DTO.GeneratedMSBuildEditorConfig.editorconfig
 E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\HandyShare.DTO.AssemblyInfoInputs.cache
 E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\HandyShare.DTO.AssemblyInfo.cs
@@ -10,3 +9,4 @@ E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\HandyShare.DTO.csproj.CoreCom
 E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\HandyShare.DTO.dll
 E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\ref\HandyShare.DTO.dll
 E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\HandyShare.DTO.pdb
+E:\NetFrameBackend\HandyShare.DTO\obj\Debug\net5.0\HandyShare.DTO.csproj.AssemblyReference.cache

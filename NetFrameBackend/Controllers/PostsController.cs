@@ -66,7 +66,6 @@ namespace NetFrameBackend.Controllers
             res.data.url = urlList[0];
 
             return res;
-
         }
 
 
@@ -75,9 +74,31 @@ namespace NetFrameBackend.Controllers
         public async Task<IResponse> AddPost(PostDTO postDTO)
         {
             return await PostService.AddPost(postDTO);
-          
-
         }
+
+        [HttpGet]
+        public async Task<IResponse> GetPost(int id)
+        {
+            var post = await PostService.GetPost(id);
+            if (post != null)
+            {
+                return new IResponse(200, post, "获取成功！");
+            }
+            return new IResponse(500,null, "帖子不存在！");
+        }
+
+        [HttpGet("getMyPost")]
+        public async Task<IResponse> GetMyPost(int id)
+        {
+            List<Post> posts = await PostService.GetPostByUserId(id);
+            if (posts != null)
+            {
+                return new IResponse(200, posts, "获取成功！");
+            }
+            return new IResponse(500, null, "获取失败！");
+        }
+
+
 
     }
 }

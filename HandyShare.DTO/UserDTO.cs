@@ -9,5 +9,10 @@ namespace HandyShare.DTO
         public string Password { get; set; }
         public string Email { get; set; }
         public string verifyCode { get; set; }
+
+        public string picUrl { get; set; }
+        public string Description { get; set; }
+
+
     }
 }

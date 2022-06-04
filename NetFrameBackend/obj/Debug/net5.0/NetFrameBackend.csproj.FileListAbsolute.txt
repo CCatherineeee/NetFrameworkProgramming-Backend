@@ -170,3 +170,5 @@ E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShareOssStorageCLI.dll
 E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShareOssStorageCLI.pdb
 E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShareCLI.dll
 E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\HandyShareCLI.pdb
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll

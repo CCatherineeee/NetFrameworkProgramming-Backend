@@ -7,6 +7,7 @@ using HandyShare.EmailHandler;
 using HandyShare.Model;
 using HandyShare.Response;
 using HandyShare.Service;
+using HandyShareOssStorageCLI;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,69 +20,9 @@ namespace NetFrameBackend.Controllers
     public class UsersController : ControllerBase
     {
 
-/*
-        // GET: api/Users
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
-        {
-            return await _context.Users.ToListAsync();
-        }
 
-        // GET: api/Users/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
-        {
-            var user = await _context.Users.FindAsync(id);
+        private readonly string prefix = "https://handyshare-1308588633.cos.ap-shanghai.myqcloud.com/";
 
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            return user;
-        }
-
-        // PUT: api/Users/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(int id, User user)
-        {
-            if (id != user.UserId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(user).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
-        {
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetUser", new { id = user.UserId }, user);
-        }*/
 
         [HttpGet("CreateVerification")]
         public IActionResult SendEmailTest(String mailAddress)
@@ -180,21 +121,68 @@ namespace NetFrameBackend.Controllers
 
         }
 
-/*        // DELETE: api/Users/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
+        [HttpPost("UploadPic")]
+        public async Task<IOssResponse> UploadPic([FromForm(Name = "file")] List<IFormFile> files)
         {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
+            List<string> urlList = new List<string>();
+            files.ForEach(async file =>
             {
-                return NotFound();
+                String str = OssStorage.GenerateName()+"user";
+                var url = "";
+                var fileName = file.FileName;
+                var stream = file.OpenReadStream();
+                byte[] bytes = new byte[stream.Length];
+                stream.Read(bytes, 0, bytes.Length);
+                await PostService.UploadPic(str + fileName, bytes);
+                url = prefix + str + fileName;
+                urlList.Add(url);
+            });
+            IOssResponse res = new IOssResponse();
+            res.errno = 0;
+            res.data = new IOssResponseData();
+            res.data.url = urlList[0];
+
+            return res;
+        }
+
+
+        [HttpGet("getById")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var user = await UserService.GetById(id);
+            if(user == null)
+            {
+                return Ok(new IResponse(404, null, "用户不存在！"));
             }
+            return Ok(new IResponse(200, user, "获得成功！"));
 
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
+        }
 
-            return NoContent();
-        }*/
+
+        [HttpPost("setProfile")]
+        public async Task<IActionResult> SetProfile(UserDTO userDTO)
+        {
+            var flag = await UserService.ResetUser(userDTO);
+            if (flag)
+            {
+                return Ok(new IResponse(200, null, "修改成功！"));
+
+            }
+            return Ok(new IResponse(500,null, "用户不存在！"));
+
+
+        }
+
+        [HttpGet("getFollow")]
+        public async Task<IActionResult> GetFollow(int id)
+        {
+            var obj = await UserService.GetFollow(id);
+            if (obj == null)
+            {
+                return Ok(new IResponse(404, null, "用户不存在！"));
+            }
+            return Ok(new IResponse(200, obj, "获得成功！"));
+        }
 
     }
 }

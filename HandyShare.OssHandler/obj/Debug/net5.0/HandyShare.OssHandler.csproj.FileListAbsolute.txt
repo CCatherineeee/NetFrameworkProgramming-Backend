@@ -15,3 +15,5 @@ E:\NetFrameBackend\HandyShare.OssHandler\obj\Debug\net5.0\ref\HandyShare.OssHand
 E:\NetFrameBackend\HandyShare.OssHandler\obj\Debug\net5.0\HandyShare.OssHandler.pdb
 E:\NetFrameBackend\HandyShare.OssHandler\bin\Debug\net5.0\HandyShareOssStorageCLI.dll
 E:\NetFrameBackend\HandyShare.OssHandler\bin\Debug\net5.0\HandyShareOssStorageCLI.pdb
+E:\NetFrameBackend\HandyShare.OssHandler\bin\Debug\net5.0\HandyShare.Model.dll
+E:\NetFrameBackend\HandyShare.OssHandler\bin\Debug\net5.0\HandyShare.Model.pdb

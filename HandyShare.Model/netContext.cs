@@ -39,12 +39,13 @@ namespace HandyShare.Model
         {
             modelBuilder.Entity<Comment>(entity =>
             {
-                entity.HasKey(e => new { e.PostId, e.UserId })
-                    .HasName("PRIMARY");
 
                 entity.ToTable("comment");
 
                 entity.HasIndex(e => e.UserId, "comment_user_idx");
+
+                entity.Property(e => e.CommentId).HasColumnName("comment_id");
+
 
                 entity.Property(e => e.PostId).HasColumnName("post_id");
 
