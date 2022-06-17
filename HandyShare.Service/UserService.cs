@@ -1,5 +1,5 @@
 ﻿using HandyShare.DTO;
-using HandyShare.Model;
+using HandyShare.Models;
 using HandyShare.OssHandler;
 using HandyShare.Response;
 using Microsoft.EntityFrameworkCore;

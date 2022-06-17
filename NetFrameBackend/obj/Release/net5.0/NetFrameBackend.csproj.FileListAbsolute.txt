@@ -155,7 +155,6 @@ E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.GeneratedM
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.AssemblyInfoInputs.cache
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.AssemblyInfo.cs
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.csproj.CoreCompileInputs.cache
-E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.MvcApplicationPartsAssemblyInfo.cs
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.MvcApplicationPartsAssemblyInfo.cache
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\staticwebassets\NetFrameBackend.StaticWebAssets.Manifest.cache
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\staticwebassets\NetFrameBackend.StaticWebAssets.xml
@@ -166,3 +165,11 @@ E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.dll
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\ref\NetFrameBackend.dll
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.pdb
 E:\NetFrameBackend\NetFrameBackend\obj\Release\net5.0\NetFrameBackend.genruntimeconfig.cache
+E:\NetFrameBackend\NetFrameBackend\bin\Release\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Release\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Release\net5.0\MySqlConnector.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Release\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Release\net5.0\HandyShareCLI.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Release\net5.0\HandyShareOssStorageCLI.dll
+E:\NetFrameBackend\NetFrameBackend\bin\Release\net5.0\HandyShareCLI.pdb
+E:\NetFrameBackend\NetFrameBackend\bin\Release\net5.0\HandyShareOssStorageCLI.pdb

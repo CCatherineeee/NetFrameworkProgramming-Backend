@@ -1,5 +1,5 @@
 ﻿using HandyShare.DTO;
-using HandyShare.Model;
+using HandyShare.Models;
 using HandyShare.OssHandler;
 using HandyShare.Response;
 using HandyShareOssStorageCLI;
@@ -24,7 +24,7 @@ namespace HandyShare.Service
 
             var post = await _context.Posts.FindAsync(id);
 
-            double factor1 = Math.Log10(post.ViewCount) * 4;
+            double factor1 = Math.Log10((double)post.ViewCount) * 4;
 
             double factor2 = (double)(post.FavoriteCount * post.CommrntCount / 5);
 

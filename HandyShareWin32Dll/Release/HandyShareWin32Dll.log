@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  dllmain.cpp
+    正在创建库 E:\NetFrameBackend\Release\HandyShareWin32Dll.lib 和对象 E:\NetFrameBackend\Release\HandyShareWin32Dll.exp
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 3 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  HandyShareWin32Dll.vcxproj -> E:\NetFrameBackend\Release\HandyShareWin32Dll.dll

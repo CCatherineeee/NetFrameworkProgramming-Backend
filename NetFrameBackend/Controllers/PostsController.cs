@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using HandyShare.DTO;
 using HandyShare.EmailHandler;
-using HandyShare.Model;
+using HandyShare.Models;
 using HandyShare.Response;
 using HandyShare.Service;
 using HandyShareOssStorageCLI;

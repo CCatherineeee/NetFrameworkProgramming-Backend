@@ -17,3 +17,9 @@ E:\NetFrameBackend\HandyShare.Service\obj\Release\net5.0\HandyShare.Service.cspr
 E:\NetFrameBackend\HandyShare.Service\obj\Release\net5.0\HandyShare.Service.dll
 E:\NetFrameBackend\HandyShare.Service\obj\Release\net5.0\ref\HandyShare.Service.dll
 E:\NetFrameBackend\HandyShare.Service\obj\Release\net5.0\HandyShare.Service.pdb
+E:\NetFrameBackend\HandyShare.Service\bin\Release\net5.0\HandyShare.DTO.dll
+E:\NetFrameBackend\HandyShare.Service\bin\Release\net5.0\HandyShareCLI.dll
+E:\NetFrameBackend\HandyShare.Service\bin\Release\net5.0\HandyShareOssStorageCLI.dll
+E:\NetFrameBackend\HandyShare.Service\bin\Release\net5.0\HandyShareCLI.pdb
+E:\NetFrameBackend\HandyShare.Service\bin\Release\net5.0\HandyShareOssStorageCLI.pdb
+E:\NetFrameBackend\HandyShare.Service\bin\Release\net5.0\HandyShare.DTO.pdb

@@ -1,5 +1,4 @@
 ﻿using HandyShare.DTO;
-using HandyShare.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using HandyShare.Response;
+using HandyShare.Models;
 
 namespace HandyShare.Service
 {

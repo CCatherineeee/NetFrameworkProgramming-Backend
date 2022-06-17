@@ -10,3 +10,6 @@ E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\HandyShare.Model.dll
 E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\ref\HandyShare.Model.dll
 E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\HandyShare.Model.pdb
 E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\HandyShare.Model.csproj.AssemblyReference.cache
+E:\NetFrameBackend\HandyShare.Model\bin\Debug\net5.0\HandyShare.Model.runtimeconfig.json
+E:\NetFrameBackend\HandyShare.Model\bin\Debug\net5.0\HandyShare.Model.runtimeconfig.dev.json
+E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\HandyShare.Model.genruntimeconfig.cache

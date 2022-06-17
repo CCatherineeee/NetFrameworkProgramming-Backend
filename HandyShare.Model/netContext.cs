@@ -1,11 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace HandyShare.Model
+#nullable disable
+
+namespace HandyShare.Models
 {
     public partial class netContext : DbContext
     {
@@ -18,6 +17,9 @@ namespace HandyShare.Model
         {
         }
 
+        public virtual DbSet<Activity> Activities { get; set; }
+        public virtual DbSet<ActivityPost> ActivityPosts { get; set; }
+        public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Favorite> Favorites { get; set; }
         public virtual DbSet<FavoritePost> FavoritePosts { get; set; }
@@ -37,38 +39,98 @@ namespace HandyShare.Model
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Activity>(entity =>
+            {
+                entity.ToTable("activity");
+
+                entity.Property(e => e.ActivityId).HasColumnName("activity_id");
+
+                entity.Property(e => e.ActivityName)
+                    .HasMaxLength(512)
+                    .HasColumnName("activity_name");
+
+                entity.Property(e => e.CreateTime)
+                    .HasColumnName("create_time")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.EndTime).HasColumnName("end_time");
+            });
+
+            modelBuilder.Entity<ActivityPost>(entity =>
+            {
+                entity.HasKey(e => new { e.ActivityId, e.PostId })
+                    .HasName("PRIMARY");
+
+                entity.ToTable("activity_post");
+
+                entity.HasIndex(e => e.PostId, "post_activity_idx");
+
+                entity.Property(e => e.ActivityId).HasColumnName("activity_id");
+
+                entity.Property(e => e.PostId).HasColumnName("post_id");
+
+                entity.HasOne(d => d.Activity)
+                    .WithMany(p => p.ActivityPosts)
+                    .HasForeignKey(d => d.ActivityId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("activity_post");
+
+                entity.HasOne(d => d.Post)
+                    .WithMany(p => p.ActivityPosts)
+                    .HasForeignKey(d => d.PostId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("post_activity");
+            });
+
+            modelBuilder.Entity<Admin>(entity =>
+            {
+                entity.ToTable("admin");
+
+                entity.Property(e => e.AdminId).HasColumnName("admin_id");
+
+                entity.Property(e => e.Mail)
+                    .HasMaxLength(1024)
+                    .HasColumnName("mail");
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(1024)
+                    .HasColumnName("name");
+
+                entity.Property(e => e.Password)
+                    .HasMaxLength(1024)
+                    .HasColumnName("password");
+            });
+
             modelBuilder.Entity<Comment>(entity =>
             {
-
                 entity.ToTable("comment");
+
+                entity.HasIndex(e => e.PostId, "comment_post");
 
                 entity.HasIndex(e => e.UserId, "comment_user_idx");
 
                 entity.Property(e => e.CommentId).HasColumnName("comment_id");
-
-
-                entity.Property(e => e.PostId).HasColumnName("post_id");
-
-                entity.Property(e => e.UserId).HasColumnName("user_id");
 
                 entity.Property(e => e.Content)
                     .HasColumnType("longtext")
                     .HasColumnName("content");
 
                 entity.Property(e => e.CreateTime)
-                    .HasMaxLength(45)
-                    .HasColumnName("create_time");
+                    .HasColumnName("create_time")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.PostId).HasColumnName("post_id");
+
+                entity.Property(e => e.UserId).HasColumnName("user_id");
 
                 entity.HasOne(d => d.Post)
                     .WithMany(p => p.Comments)
                     .HasForeignKey(d => d.PostId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("comment_post");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Comments)
                     .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("comment_user");
             });
 
@@ -148,22 +210,20 @@ namespace HandyShare.Model
                     .HasColumnName("commrnt_count")
                     .HasDefaultValueSql("'0'");
 
-                entity.Property(e => e.HotPoint)
-                    .HasColumnName("hot_point")
-                    .HasDefaultValueSql("'0'");
-
-                entity.Property(e => e.ViewCount)
-                    .HasColumnName("view_count")
-                    .HasDefaultValueSql("'0'");
-
                 entity.Property(e => e.Content)
                     .HasColumnType("longtext")
                     .HasColumnName("content");
 
-                entity.Property(e => e.CreateTime).HasColumnName("create_time");
+                entity.Property(e => e.CreateTime)
+                    .HasColumnName("create_time")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                 entity.Property(e => e.FavoriteCount)
                     .HasColumnName("favorite_count")
+                    .HasDefaultValueSql("'0'");
+
+                entity.Property(e => e.HotPoint)
+                    .HasColumnName("hot_point")
                     .HasDefaultValueSql("'0'");
 
                 entity.Property(e => e.PicUrl)
@@ -175,6 +235,10 @@ namespace HandyShare.Model
                     .HasColumnName("title");
 
                 entity.Property(e => e.UserId).HasColumnName("user_id");
+
+                entity.Property(e => e.ViewCount)
+                    .HasColumnName("view_count")
+                    .HasDefaultValueSql("'0'");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Posts)
@@ -234,5 +298,4 @@ namespace HandyShare.Model
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
-
 }
