@@ -49,6 +49,7 @@ namespace HandyShare.Service
                 Console.WriteLine(e);
                 return null;
             }
+            await PostService.calculateHotQuestionScoreValue(commentDTO.postId);
             return comment;
 
         }

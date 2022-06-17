@@ -16,12 +16,17 @@ namespace HandyShare.Model
         }
 
         public int PostId { get; set; }
+
         public string Title { get; set; }
         public string Content { get; set; }
         public string PicUrl { get; set; }
         public DateTime? CreateTime { get; set; }
         public int? FavoriteCount { get; set; }
         public int? CommrntCount { get; set; }
+        public int ViewCount { get; set; }
+        public double HotPoint { get; set; }
+
+
         public int? UserId { get; set; }
 
         public virtual User User { get; set; }

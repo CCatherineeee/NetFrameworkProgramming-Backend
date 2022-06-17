@@ -98,6 +98,29 @@ namespace NetFrameBackend.Controllers
             return new IResponse(500, null, "ªÒ»° ß∞‹£°");
         }
 
+        [HttpPost("view")]
+        public async Task<IResponse> view(int id)
+        {
+            var flag = await PostService.AddView(id);
+            return new IResponse(200, null, null);
+        }
+
+        [HttpGet("hotPost")]
+        public async Task<IResponse> GetHotPost()
+        {
+            var res = await PostService.GetHotPost();
+            return new IResponse(200, res, null);
+
+        }
+
+        [HttpGet("newPost")]
+        public async Task<IResponse> GetNewPost()
+        {
+            var res = await PostService.GetNewPost();
+            return new IResponse(200, res, null);
+
+        }
+
 
 
     }

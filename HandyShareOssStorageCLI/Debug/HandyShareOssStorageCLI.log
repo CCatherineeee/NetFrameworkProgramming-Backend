@@ -1,8 +1,4 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  HandyShareOssStorageCLI.cpp
+﻿  HandyShareOssStorageCLI.cpp
 E:\NetFrameBackend\HandyShareOssStorageCLI\HandyShareOssStorageCLI.h(18,14): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  正在生成代码...
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : 遇到了 MSIL 模块；对 MSIL 禁用了增量链接；正在执行完全链接
   HandyShareOssStorageCLI.vcxproj -> E:\NetFrameBackend\Debug\HandyShareOssStorageCLI.dll

@@ -9,3 +9,4 @@ E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\HandyShare.Model.csproj.Cor
 E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\HandyShare.Model.dll
 E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\ref\HandyShare.Model.dll
 E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\HandyShare.Model.pdb
+E:\NetFrameBackend\HandyShare.Model\obj\Debug\net5.0\HandyShare.Model.csproj.AssemblyReference.cache

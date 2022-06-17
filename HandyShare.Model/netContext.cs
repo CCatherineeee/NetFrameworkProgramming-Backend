@@ -148,6 +148,14 @@ namespace HandyShare.Model
                     .HasColumnName("commrnt_count")
                     .HasDefaultValueSql("'0'");
 
+                entity.Property(e => e.HotPoint)
+                    .HasColumnName("hot_point")
+                    .HasDefaultValueSql("'0'");
+
+                entity.Property(e => e.ViewCount)
+                    .HasColumnName("view_count")
+                    .HasDefaultValueSql("'0'");
+
                 entity.Property(e => e.Content)
                     .HasColumnType("longtext")
                     .HasColumnName("content");
